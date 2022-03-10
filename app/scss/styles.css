@@ -1,0 +1,222 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+  background-color: #0d192b;
+}
+
+body, html {
+  font-family: "Outfit", sans-serif;
+}
+
+section {
+  display: block;
+}
+
+h3, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+  height: 596px;
+  background-color: #15263F;
+  border-radius: 15px;
+}
+
+.card__image {
+  position: relative;
+}
+
+.card__image__second {
+  position: absolute;
+  top: 0;
+  background-color: #00fff7;
+  border-radius: 8px;
+  width: 100%;
+  height: 92%;
+  z-index: 999;
+  margin-top: 24px;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card__image__second:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.card__image__second > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.card__image > img {
+  width: 302px;
+  height: 302px;
+  margin-top: 24px;
+  border-radius: 8px;
+}
+
+.card__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__details > h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 24px 24px 16px;
+}
+
+.card__details > h3:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card__details > p {
+  color: #8bacda;
+  padding: 0 24px 24px 24px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.card__details__currency {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card__details__currency__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 24px;
+  padding-bottom: 24px;
+}
+
+.card__details__currency__text > i {
+  width: 20px;
+  height: 20px;
+  background-image: url("/images/icon-ethereum.svg");
+  background-repeat: no-repeat;
+}
+
+.card__details__currency__text > span {
+  color: #00fff7;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.card__details__currency__timeleft {
+  padding-right: 26px;
+}
+
+.card__details__currency__timeleft > i {
+  width: 20px;
+  height: 20px;
+  background-image: url("/images/icon-clock.svg");
+  background-repeat: no-repeat;
+}
+
+.card__details__currency__timeleft > span {
+  color: #8bacda;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__details > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #2f415b;
+  width: 85%;
+  -webkit-transform: translateX(8%);
+          transform: translateX(8%);
+}
+
+.card__details__owner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 0 24px 0;
+}
+
+.card__details__owner > img {
+  width: 33px;
+  height: 33px;
+  border: 1px solid white;
+  border-radius: 100%;
+  margin-left: 24px;
+}
+
+.card__details__owner > p {
+  padding-left: 16px;
+  color: #8bacda;
+  font-size: 16px;
+}
+
+.card__details__owner > p > span {
+  color: white;
+}
+
+.card__details__owner > p > span:hover {
+  cursor: pointer;
+  color: #00fff7;
+}
+/*# sourceMappingURL=styles.css.map */

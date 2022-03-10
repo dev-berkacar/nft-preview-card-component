@@ -1,0 +1,28 @@
+@import "variables";
+
+html {
+  
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  background-color: $veryDarkBlueMainBG;
+}
+
+body, html {
+  font-family: "Outfit", sans-serif;
+}
+
+section {
+  display: block;
+}
+
+h3, h5, p {
+  margin: 0;
+  padding: 0;
+}
